@@ -1,4 +1,2 @@
-My intention was built a map using angularJS and introducing postal address.
+Mi intencion es hacer un mapa que use angular JS y introduzca un código postal
 
-Examples from: 
-https://github.com/tombatossals/angular-leaflet-directive/tree/master/examples
