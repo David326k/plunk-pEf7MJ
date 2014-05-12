@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="Map">
+
+  <head>
+    <!--Leaflet API for OSM-->
+    <script data-require="jquery@2.0.3" data-semver="2.0.3" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <link rel="stylesheet" href="leaflet-styles.css" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+    <!--AngularBootstrap API-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" />
+    <!--my code-->
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="MapCtrl">
+    <searching-form></searching-form>
+    <br />
+    <div id="myMap" style="margin-left:15%; width:50%; height:300px"></div>
+  </body>
+
+</html>

@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Vamos a buscar tu ciudad.</h1>
+  <h3>Introduce un país y una ciudad que quieras localizar.</h3>
+  <form name="loginForm" class="form-horizontal">
+
+    <!-- why $parent? -->
+    <!-- This is becouse angular-ui.bootstrap use child scope -->
+    <!-- and to "scape" from there we have to use parent scope -->
+
+    <div class="form-group">
+      <div class="col-xs-5 col-lg-10">
+        <label class="control-label">País:</label>
+        <input ng-model="$parent.country" popover="Introduce un país" popover-trigger="mouseenter" type="text" class="form-control" placeholder="Introduce un país" autofocus required/>
+      </div>
+
+      <div class="row col-xs-5 col-lg-10">
+        <label class="control-label">Ciudad:</label>
+        <input ng-model="$parent.city" popover="Introduce una ciudad" popover-trigger="mouseenter" type="text" class="form-control" placeholder="Introduce una ciudad" autofocus required/>
+      </div>
+
+    </div>
+
+    <button ng-disabled="loginForm.$invalid" class="btn btn-primary" ng-click="search()">Entra</button>
+    <alert ng-show="error">Error: {{error}}</alert>
+ 
+  </form>
+</div>
